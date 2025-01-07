@@ -78,8 +78,15 @@ WSGI_APPLICATION = 'cocialmedia.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'socialmediaapi',  # Name of the MySQL database
+        'USER': 'root',  # MySQL username
+        'PASSWORD': 'KRMVNS2024.$mysql',  # MySQL password
+        'HOST': 'localhost',  # MySQL host (use 'localhost' for local development)
+        'PORT': '3306',  # MySQL port (default is 3306)
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",  # Optional: Ensures strict SQL mode
+        },
     }
 }
 

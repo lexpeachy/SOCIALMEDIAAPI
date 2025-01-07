@@ -895,3 +895,336 @@ File C:\Users\Admin\.virtualenvs\PersonalProject-h1Teo5-U\Lib\site-packages\djan
 File C:\Users\Admin\.virtualenvs\PersonalProject-h1Teo5-U\Lib\site-packages\django\contrib\auth\migrations\0005_alter_user_last_login_null.py first seen with mtime 1733828828.0395732
 File C:\Users\Admin\.virtualenvs\PersonalProject-h1Teo5-U\Lib\site-packages\django\contrib\auth\migrations\0003_alter_user_email_max_length.py first seen with mtime 1733828828.037568
 File C:\Users\Admin\.virtualenvs\PersonalProject-h1Teo5-U\Lib\site-packages\django\contrib\contenttypes\migrations\__init__.py first seen with mtime 1733828828.436105
+File D:\SocialMediaAPI\cocialmedia\settings.py previous mtime: 1736171452.8643246, current mtime: 1736237571.8227992
+D:\SocialMediaAPI\cocialmedia\settings.py notified as changed. Signal results: [(<function template_changed at 0x00000238FB9E3240>, None), (<function translation_file_changed at 0x00000238FC9ED3A0>, None)].
+D:\SocialMediaAPI\cocialmedia\settings.py changed, reloading.
+(0.107) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None; alias=default
+(0.025) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.014) 
+            SELECT
+                table_name,
+                table_type,
+                table_comment
+            FROM information_schema.tables
+            WHERE table_schema = DATABASE()
+            ; args=None; alias=default
+(0.001) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None; alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None; alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.002) 
+            SELECT
+                table_name,
+                table_type,
+                table_comment
+            FROM information_schema.tables
+            WHERE table_schema = DATABASE()
+            ; args=None; alias=default
+(0.012) 
+            SELECT
+                table_name,
+                table_type,
+                table_comment
+            FROM information_schema.tables
+            WHERE table_schema = DATABASE()
+            ; args=None; alias=default
+(0.017) 
+            SELECT
+                table_name,
+                table_type,
+                table_comment
+            FROM information_schema.tables
+            WHERE table_schema = DATABASE()
+            ; args=None; alias=default
+CREATE TABLE `django_migrations` (`id` bigint AUTO_INCREMENT NOT NULL PRIMARY KEY, `app` varchar(255) NOT NULL, `name` varchar(255) NOT NULL, `applied` datetime(6) NOT NULL); (params None)
+(5.157) CREATE TABLE `django_migrations` (`id` bigint AUTO_INCREMENT NOT NULL PRIMARY KEY, `app` varchar(255) NOT NULL, `name` varchar(255) NOT NULL, `applied` datetime(6) NOT NULL); args=None; alias=default
+CREATE TABLE `django_content_type` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `name` varchar(100) NOT NULL, `app_label` varchar(100) NOT NULL, `model` varchar(100) NOT NULL); (params None)
+(0.973) CREATE TABLE `django_content_type` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `name` varchar(100) NOT NULL, `app_label` varchar(100) NOT NULL, `model` varchar(100) NOT NULL); args=None; alias=default
+ALTER TABLE `django_content_type` ADD CONSTRAINT `django_content_type_app_label_model_76bd3d3b_uniq` UNIQUE (`app_label`, `model`); (params ())
+(1.159) ALTER TABLE `django_content_type` ADD CONSTRAINT `django_content_type_app_label_model_76bd3d3b_uniq` UNIQUE (`app_label`, `model`); args=(); alias=default
+(0.026) 
+            SELECT
+                table_name,
+                table_type,
+                table_comment
+            FROM information_schema.tables
+            WHERE table_schema = DATABASE()
+            ; args=None; alias=default
+(0.468) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('contenttypes', '0001_initial', '2025-01-07 08:22:43.515553'); args=['contenttypes', '0001_initial', '2025-01-07 08:22:43.515553']; alias=default
+ALTER TABLE `django_content_type` MODIFY `name` varchar(100) NULL; (params [])
+(1.985) ALTER TABLE `django_content_type` MODIFY `name` varchar(100) NULL; args=[]; alias=default
+(0.000) BEGIN; args=None; alias=default
+(0.000) COMMIT; args=None; alias=default
+ALTER TABLE `django_content_type` DROP COLUMN `name`; (params ())
+(0.399) ALTER TABLE `django_content_type` DROP COLUMN `name`; args=(); alias=default
+(0.065) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('contenttypes', '0002_remove_content_type_name', '2025-01-07 08:22:46.385851'); args=['contenttypes', '0002_remove_content_type_name', '2025-01-07 08:22:46.385851']; alias=default
+CREATE TABLE `auth_permission` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `name` varchar(50) NOT NULL, `content_type_id` integer NOT NULL, `codename` varchar(100) NOT NULL); (params None)
+(0.646) CREATE TABLE `auth_permission` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `name` varchar(50) NOT NULL, `content_type_id` integer NOT NULL, `codename` varchar(100) NOT NULL); args=None; alias=default
+(0.003) 
+            SELECT engine
+            FROM information_schema.tables
+            WHERE
+                table_name = 'auth_permission' AND
+                table_schema = DATABASE()
+            ; args=['auth_permission']; alias=default
+CREATE TABLE `auth_group` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `name` varchar(80) NOT NULL UNIQUE); (params None)
+(0.520) CREATE TABLE `auth_group` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `name` varchar(80) NOT NULL UNIQUE); args=None; alias=default
+CREATE TABLE `auth_group_permissions` (`id` bigint AUTO_INCREMENT NOT NULL PRIMARY KEY, `group_id` integer NOT NULL, `permission_id` integer NOT NULL); (params None)
+(0.664) CREATE TABLE `auth_group_permissions` (`id` bigint AUTO_INCREMENT NOT NULL PRIMARY KEY, `group_id` integer NOT NULL, `permission_id` integer NOT NULL); args=None; alias=default
+(0.003) 
+            SELECT engine
+            FROM information_schema.tables
+            WHERE
+                table_name = 'auth_group_permissions' AND
+                table_schema = DATABASE()
+            ; args=['auth_group_permissions']; alias=default
+(0.003) 
+            SELECT engine
+            FROM information_schema.tables
+            WHERE
+                table_name = 'auth_group_permissions' AND
+                table_schema = DATABASE()
+            ; args=['auth_group_permissions']; alias=default
+ALTER TABLE `auth_permission` ADD CONSTRAINT `auth_permission_content_type_id_codename_01ab375a_uniq` UNIQUE (`content_type_id`, `codename`); (params None)
+(0.440) ALTER TABLE `auth_permission` ADD CONSTRAINT `auth_permission_content_type_id_codename_01ab375a_uniq` UNIQUE (`content_type_id`, `codename`); args=None; alias=default
+ALTER TABLE `auth_permission` ADD CONSTRAINT `auth_permission_content_type_id_2f476e4b_fk_django_co` FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type` (`id`); (params None)
+(1.455) ALTER TABLE `auth_permission` ADD CONSTRAINT `auth_permission_content_type_id_2f476e4b_fk_django_co` FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type` (`id`); args=None; alias=default
+ALTER TABLE `auth_group_permissions` ADD CONSTRAINT `auth_group_permissions_group_id_permission_id_0cd325b0_uniq` UNIQUE (`group_id`, `permission_id`); (params None)
+(0.242) ALTER TABLE `auth_group_permissions` ADD CONSTRAINT `auth_group_permissions_group_id_permission_id_0cd325b0_uniq` UNIQUE (`group_id`, `permission_id`); args=None; alias=default
+ALTER TABLE `auth_group_permissions` ADD CONSTRAINT `auth_group_permissions_group_id_b120cbf9_fk_auth_group_id` FOREIGN KEY (`group_id`) REFERENCES `auth_group` (`id`); (params None)
+(1.358) ALTER TABLE `auth_group_permissions` ADD CONSTRAINT `auth_group_permissions_group_id_b120cbf9_fk_auth_group_id` FOREIGN KEY (`group_id`) REFERENCES `auth_group` (`id`); args=None; alias=default
+ALTER TABLE `auth_group_permissions` ADD CONSTRAINT `auth_group_permissio_permission_id_84c5c92e_fk_auth_perm` FOREIGN KEY (`permission_id`) REFERENCES `auth_permission` (`id`); (params None)
+(1.410) ALTER TABLE `auth_group_permissions` ADD CONSTRAINT `auth_group_permissio_permission_id_84c5c92e_fk_auth_perm` FOREIGN KEY (`permission_id`) REFERENCES `auth_permission` (`id`); args=None; alias=default
+(0.048) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('auth', '0001_initial', '2025-01-07 08:22:53.236043'); args=['auth', '0001_initial', '2025-01-07 08:22:53.236043']; alias=default
+ALTER TABLE `auth_permission` MODIFY `name` varchar(255) NOT NULL; (params [])
+(2.191) ALTER TABLE `auth_permission` MODIFY `name` varchar(255) NOT NULL; args=[]; alias=default
+(0.039) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('auth', '0002_alter_permission_name_max_length', '2025-01-07 08:22:55.490691'); args=['auth', '0002_alter_permission_name_max_length', '2025-01-07 08:22:55.490691']; alias=default
+(0.035) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('auth', '0003_alter_user_email_max_length', '2025-01-07 08:22:55.548796'); args=['auth', '0003_alter_user_email_max_length', '2025-01-07 08:22:55.548796']; alias=default
+(0.038) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('auth', '0004_alter_user_username_opts', '2025-01-07 08:22:55.600944'); args=['auth', '0004_alter_user_username_opts', '2025-01-07 08:22:55.600944']; alias=default
+(0.036) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('auth', '0005_alter_user_last_login_null', '2025-01-07 08:22:55.648294'); args=['auth', '0005_alter_user_last_login_null', '2025-01-07 08:22:55.648294']; alias=default
+(0.043) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('auth', '0006_require_contenttypes_0002', '2025-01-07 08:22:55.686172'); args=['auth', '0006_require_contenttypes_0002', '2025-01-07 08:22:55.686172']; alias=default
+(0.037) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('auth', '0007_alter_validators_add_error_messages', '2025-01-07 08:22:55.736742'); args=['auth', '0007_alter_validators_add_error_messages', '2025-01-07 08:22:55.736742']; alias=default
+(0.166) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('auth', '0008_alter_user_username_max_length', '2025-01-07 08:22:55.782425'); args=['auth', '0008_alter_user_username_max_length', '2025-01-07 08:22:55.782425']; alias=default
+(0.048) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('auth', '0009_alter_user_last_name_max_length', '2025-01-07 08:22:55.969415'); args=['auth', '0009_alter_user_last_name_max_length', '2025-01-07 08:22:55.969415']; alias=default
+ALTER TABLE `auth_group` MODIFY `name` varchar(150) NOT NULL; (params [])
+(0.095) ALTER TABLE `auth_group` MODIFY `name` varchar(150) NOT NULL; args=[]; alias=default
+(0.054) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('auth', '0010_alter_group_name_max_length', '2025-01-07 08:22:56.119799'); args=['auth', '0010_alter_group_name_max_length', '2025-01-07 08:22:56.119799']; alias=default
+(0.001) BEGIN; args=None; alias=default
+(0.001) COMMIT; args=None; alias=default
+(0.035) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('auth', '0011_update_proxy_permissions', '2025-01-07 08:22:56.192624'); args=['auth', '0011_update_proxy_permissions', '2025-01-07 08:22:56.192624']; alias=default
+(0.084) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('auth', '0012_alter_user_first_name_max_length', '2025-01-07 08:22:56.244852'); args=['auth', '0012_alter_user_first_name_max_length', '2025-01-07 08:22:56.244852']; alias=default
+CREATE TABLE `api_user` (`id` bigint AUTO_INCREMENT NOT NULL PRIMARY KEY, `password` varchar(128) NOT NULL, `last_login` datetime(6) NULL, `is_superuser` bool NOT NULL, `username` varchar(150) NOT NULL UNIQUE, `first_name` varchar(150) NOT NULL, `last_name` varchar(150) NOT NULL, `email` varchar(254) NOT NULL, `is_staff` bool NOT NULL, `is_active` bool NOT NULL, `date_joined` datetime(6) NOT NULL, `bio` longtext NULL, `profile_picture` varchar(200) NULL); (params None)
+(0.626) CREATE TABLE `api_user` (`id` bigint AUTO_INCREMENT NOT NULL PRIMARY KEY, `password` varchar(128) NOT NULL, `last_login` datetime(6) NULL, `is_superuser` bool NOT NULL, `username` varchar(150) NOT NULL UNIQUE, `first_name` varchar(150) NOT NULL, `last_name` varchar(150) NOT NULL, `email` varchar(254) NOT NULL, `is_staff` bool NOT NULL, `is_active` bool NOT NULL, `date_joined` datetime(6) NOT NULL, `bio` longtext NULL, `profile_picture` varchar(200) NULL); args=None; alias=default
+CREATE TABLE `api_user_groups` (`id` bigint AUTO_INCREMENT NOT NULL PRIMARY KEY, `user_id` bigint NOT NULL, `group_id` integer NOT NULL); (params None)
+(0.474) CREATE TABLE `api_user_groups` (`id` bigint AUTO_INCREMENT NOT NULL PRIMARY KEY, `user_id` bigint NOT NULL, `group_id` integer NOT NULL); args=None; alias=default
+(0.003) 
+            SELECT engine
+            FROM information_schema.tables
+            WHERE
+                table_name = 'api_user_groups' AND
+                table_schema = DATABASE()
+            ; args=['api_user_groups']; alias=default
+(0.005) 
+            SELECT engine
+            FROM information_schema.tables
+            WHERE
+                table_name = 'api_user_groups' AND
+                table_schema = DATABASE()
+            ; args=['api_user_groups']; alias=default
+CREATE TABLE `api_user_user_permissions` (`id` bigint AUTO_INCREMENT NOT NULL PRIMARY KEY, `user_id` bigint NOT NULL, `permission_id` integer NOT NULL); (params None)
+(0.489) CREATE TABLE `api_user_user_permissions` (`id` bigint AUTO_INCREMENT NOT NULL PRIMARY KEY, `user_id` bigint NOT NULL, `permission_id` integer NOT NULL); args=None; alias=default
+(0.003) 
+            SELECT engine
+            FROM information_schema.tables
+            WHERE
+                table_name = 'api_user_user_permissions' AND
+                table_schema = DATABASE()
+            ; args=['api_user_user_permissions']; alias=default
+(0.003) 
+            SELECT engine
+            FROM information_schema.tables
+            WHERE
+                table_name = 'api_user_user_permissions' AND
+                table_schema = DATABASE()
+            ; args=['api_user_user_permissions']; alias=default
+CREATE TABLE `api_post` (`id` bigint AUTO_INCREMENT NOT NULL PRIMARY KEY, `content` longtext NOT NULL, `timestamp` datetime(6) NOT NULL, `media` varchar(200) NULL, `user_id` bigint NOT NULL); (params None)
+(0.722) CREATE TABLE `api_post` (`id` bigint AUTO_INCREMENT NOT NULL PRIMARY KEY, `content` longtext NOT NULL, `timestamp` datetime(6) NOT NULL, `media` varchar(200) NULL, `user_id` bigint NOT NULL); args=None; alias=default
+(0.003) 
+            SELECT engine
+            FROM information_schema.tables
+            WHERE
+                table_name = 'api_post' AND
+                table_schema = DATABASE()
+            ; args=['api_post']; alias=default
+CREATE TABLE `api_follower` (`id` bigint AUTO_INCREMENT NOT NULL PRIMARY KEY, `created_at` datetime(6) NOT NULL, `follower_id` bigint NOT NULL, `user_id` bigint NOT NULL); (params None)
+(0.597) CREATE TABLE `api_follower` (`id` bigint AUTO_INCREMENT NOT NULL PRIMARY KEY, `created_at` datetime(6) NOT NULL, `follower_id` bigint NOT NULL, `user_id` bigint NOT NULL); args=None; alias=default
+(0.003) 
+            SELECT engine
+            FROM information_schema.tables
+            WHERE
+                table_name = 'api_follower' AND
+                table_schema = DATABASE()
+            ; args=['api_follower']; alias=default
+(0.003) 
+            SELECT engine
+            FROM information_schema.tables
+            WHERE
+                table_name = 'api_follower' AND
+                table_schema = DATABASE()
+            ; args=['api_follower']; alias=default
+ALTER TABLE `api_user_groups` ADD CONSTRAINT `api_user_groups_user_id_group_id_9c7ddfb5_uniq` UNIQUE (`user_id`, `group_id`); (params None)
+(0.473) ALTER TABLE `api_user_groups` ADD CONSTRAINT `api_user_groups_user_id_group_id_9c7ddfb5_uniq` UNIQUE (`user_id`, `group_id`); args=None; alias=default
+ALTER TABLE `api_user_groups` ADD CONSTRAINT `api_user_groups_user_id_a5ff39fa_fk_api_user_id` FOREIGN KEY (`user_id`) REFERENCES `api_user` (`id`); (params None)
+(1.912) ALTER TABLE `api_user_groups` ADD CONSTRAINT `api_user_groups_user_id_a5ff39fa_fk_api_user_id` FOREIGN KEY (`user_id`) REFERENCES `api_user` (`id`); args=None; alias=default
+ALTER TABLE `api_user_groups` ADD CONSTRAINT `api_user_groups_group_id_3af85785_fk_auth_group_id` FOREIGN KEY (`group_id`) REFERENCES `auth_group` (`id`); (params None)
+(1.552) ALTER TABLE `api_user_groups` ADD CONSTRAINT `api_user_groups_group_id_3af85785_fk_auth_group_id` FOREIGN KEY (`group_id`) REFERENCES `auth_group` (`id`); args=None; alias=default
+ALTER TABLE `api_user_user_permissions` ADD CONSTRAINT `api_user_user_permissions_user_id_permission_id_a06dd704_uniq` UNIQUE (`user_id`, `permission_id`); (params None)
+(0.346) ALTER TABLE `api_user_user_permissions` ADD CONSTRAINT `api_user_user_permissions_user_id_permission_id_a06dd704_uniq` UNIQUE (`user_id`, `permission_id`); args=None; alias=default
+ALTER TABLE `api_user_user_permissions` ADD CONSTRAINT `api_user_user_permissions_user_id_f3945d65_fk_api_user_id` FOREIGN KEY (`user_id`) REFERENCES `api_user` (`id`); (params None)
+(1.908) ALTER TABLE `api_user_user_permissions` ADD CONSTRAINT `api_user_user_permissions_user_id_f3945d65_fk_api_user_id` FOREIGN KEY (`user_id`) REFERENCES `api_user` (`id`); args=None; alias=default
+ALTER TABLE `api_user_user_permissions` ADD CONSTRAINT `api_user_user_permis_permission_id_305b7fea_fk_auth_perm` FOREIGN KEY (`permission_id`) REFERENCES `auth_permission` (`id`); (params None)
+(1.734) ALTER TABLE `api_user_user_permissions` ADD CONSTRAINT `api_user_user_permis_permission_id_305b7fea_fk_auth_perm` FOREIGN KEY (`permission_id`) REFERENCES `auth_permission` (`id`); args=None; alias=default
+ALTER TABLE `api_post` ADD CONSTRAINT `api_post_user_id_580bae2a_fk_api_user_id` FOREIGN KEY (`user_id`) REFERENCES `api_user` (`id`); (params None)
+(2.211) ALTER TABLE `api_post` ADD CONSTRAINT `api_post_user_id_580bae2a_fk_api_user_id` FOREIGN KEY (`user_id`) REFERENCES `api_user` (`id`); args=None; alias=default
+ALTER TABLE `api_follower` ADD CONSTRAINT `api_follower_user_id_follower_id_016f653d_uniq` UNIQUE (`user_id`, `follower_id`); (params None)
+(0.619) ALTER TABLE `api_follower` ADD CONSTRAINT `api_follower_user_id_follower_id_016f653d_uniq` UNIQUE (`user_id`, `follower_id`); args=None; alias=default
+ALTER TABLE `api_follower` ADD CONSTRAINT `api_follower_follower_id_6102f642_fk_api_user_id` FOREIGN KEY (`follower_id`) REFERENCES `api_user` (`id`); (params None)
+(3.036) ALTER TABLE `api_follower` ADD CONSTRAINT `api_follower_follower_id_6102f642_fk_api_user_id` FOREIGN KEY (`follower_id`) REFERENCES `api_user` (`id`); args=None; alias=default
+ALTER TABLE `api_follower` ADD CONSTRAINT `api_follower_user_id_f7b69a27_fk_api_user_id` FOREIGN KEY (`user_id`) REFERENCES `api_user` (`id`); (params None)
+(1.431) ALTER TABLE `api_follower` ADD CONSTRAINT `api_follower_user_id_f7b69a27_fk_api_user_id` FOREIGN KEY (`user_id`) REFERENCES `api_user` (`id`); args=None; alias=default
+(0.048) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('api', '0001_initial', '2025-01-07 08:23:14.547795'); args=['api', '0001_initial', '2025-01-07 08:23:14.547795']; alias=default
+CREATE TABLE `django_admin_log` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `action_time` datetime(6) NOT NULL, `object_id` longtext NULL, `object_repr` varchar(200) NOT NULL, `action_flag` smallint UNSIGNED NOT NULL CHECK (`action_flag` >= 0), `change_message` longtext NOT NULL, `content_type_id` integer NULL, `user_id` bigint NOT NULL); (params None)
+(0.758) CREATE TABLE `django_admin_log` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `action_time` datetime(6) NOT NULL, `object_id` longtext NULL, `object_repr` varchar(200) NOT NULL, `action_flag` smallint UNSIGNED NOT NULL CHECK (`action_flag` >= 0), `change_message` longtext NOT NULL, `content_type_id` integer NULL, `user_id` bigint NOT NULL); args=None; alias=default
+(0.003) 
+            SELECT engine
+            FROM information_schema.tables
+            WHERE
+                table_name = 'django_admin_log' AND
+                table_schema = DATABASE()
+            ; args=['django_admin_log']; alias=default
+(0.003) 
+            SELECT engine
+            FROM information_schema.tables
+            WHERE
+                table_name = 'django_admin_log' AND
+                table_schema = DATABASE()
+            ; args=['django_admin_log']; alias=default
+ALTER TABLE `django_admin_log` ADD CONSTRAINT `django_admin_log_content_type_id_c4bce8eb_fk_django_co` FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type` (`id`); (params None)
+(1.464) ALTER TABLE `django_admin_log` ADD CONSTRAINT `django_admin_log_content_type_id_c4bce8eb_fk_django_co` FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type` (`id`); args=None; alias=default
+ALTER TABLE `django_admin_log` ADD CONSTRAINT `django_admin_log_user_id_c564eba6_fk_api_user_id` FOREIGN KEY (`user_id`) REFERENCES `api_user` (`id`); (params None)
+(1.853) ALTER TABLE `django_admin_log` ADD CONSTRAINT `django_admin_log_user_id_c564eba6_fk_api_user_id` FOREIGN KEY (`user_id`) REFERENCES `api_user` (`id`); args=None; alias=default
+(0.317) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('admin', '0001_initial', '2025-01-07 08:23:18.713208'); args=['admin', '0001_initial', '2025-01-07 08:23:18.713208']; alias=default
+(0.056) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('admin', '0002_logentry_remove_auto_add', '2025-01-07 08:23:19.061647'); args=['admin', '0002_logentry_remove_auto_add', '2025-01-07 08:23:19.061647']; alias=default
+(0.116) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('admin', '0003_logentry_add_action_flag_choices', '2025-01-07 08:23:19.136460'); args=['admin', '0003_logentry_add_action_flag_choices', '2025-01-07 08:23:19.136460']; alias=default
+CREATE TABLE `django_session` (`session_key` varchar(40) NOT NULL PRIMARY KEY, `session_data` longtext NOT NULL, `expire_date` datetime(6) NOT NULL); (params None)
+(0.882) CREATE TABLE `django_session` (`session_key` varchar(40) NOT NULL PRIMARY KEY, `session_data` longtext NOT NULL, `expire_date` datetime(6) NOT NULL); args=None; alias=default
+(0.003) 
+            SELECT engine
+            FROM information_schema.tables
+            WHERE
+                table_name = 'django_session' AND
+                table_schema = DATABASE()
+            ; args=['django_session']; alias=default
+CREATE INDEX `django_session_expire_date_a5c62663` ON `django_session` (`expire_date`); (params None)
+(0.369) CREATE INDEX `django_session_expire_date_a5c62663` ON `django_session` (`expire_date`); args=None; alias=default
+(0.139) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('sessions', '0001_initial', '2025-01-07 08:23:20.511987'); args=['sessions', '0001_initial', '2025-01-07 08:23:20.511987']; alias=default
+(0.002) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=(); alias=default
+(0.120) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'admin'; args=('admin',); alias=default
+(0.000) BEGIN; args=None; alias=default
+(0.140) INSERT INTO `django_content_type` (`app_label`, `model`) VALUES ('admin', 'logentry'); args=('admin', 'logentry'); alias=default
+(0.058) COMMIT; args=None; alias=default
+(0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'admin' AND `django_content_type`.`model` IN ('logentry')); args=('admin', 'logentry'); alias=default
+(0.003) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (1) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(1,); alias=default
+(0.000) BEGIN; args=None; alias=default
+(0.020) INSERT INTO `auth_permission` (`name`, `content_type_id`, `codename`) VALUES ('Can add log entry', 1, 'add_logentry'), ('Can change log entry', 1, 'change_logentry'), ('Can delete log entry', 1, 'delete_logentry'), ('Can view log entry', 1, 'view_logentry'); args=('Can add log entry', 1, 'add_logentry', 'Can change log entry', 1, 'change_logentry', 'Can delete log entry', 1, 'delete_logentry', 'Can view log entry', 1, 'view_logentry'); alias=default
+(0.179) COMMIT; args=None; alias=default
+(0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'admin'; args=('admin',); alias=default
+(0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'auth'; args=('auth',); alias=default
+(0.000) BEGIN; args=None; alias=default
+(0.001) INSERT INTO `django_content_type` (`app_label`, `model`) VALUES ('auth', 'permission'), ('auth', 'group'); args=('auth', 'permission', 'auth', 'group'); alias=default
+(0.082) COMMIT; args=None; alias=default
+(0.175) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'auth' AND `django_content_type`.`model` IN ('permission', 'group')); args=('auth', 'permission', 'group'); alias=default
+(0.001) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (2, 3) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(2, 3); alias=default
+(0.000) BEGIN; args=None; alias=default
+(0.001) INSERT INTO `auth_permission` (`name`, `content_type_id`, `codename`) VALUES ('Can add permission', 2, 'add_permission'), ('Can change permission', 2, 'change_permission'), ('Can delete permission', 2, 'delete_permission'), ('Can view permission', 2, 'view_permission'), ('Can add group', 3, 'add_group'), ('Can change group', 3, 'change_group'), ('Can delete group', 3, 'delete_group'), ('Can view group', 3, 'view_group'); args=('Can add permission', 2, 'add_permission', 'Can change permission', 2, 'change_permission', 'Can delete permission', 2, 'delete_permission', 'Can view permission', 2, 'view_permission', 'Can add group', 3, 'add_group', 'Can change group', 3, 'change_group', 'Can delete group', 3, 'delete_group', 'Can view group', 3, 'view_group'); alias=default
+(0.047) COMMIT; args=None; alias=default
+(0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'auth'; args=('auth',); alias=default
+(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'contenttypes'; args=('contenttypes',); alias=default
+(0.000) BEGIN; args=None; alias=default
+(0.000) INSERT INTO `django_content_type` (`app_label`, `model`) VALUES ('contenttypes', 'contenttype'); args=('contenttypes', 'contenttype'); alias=default
+(0.152) COMMIT; args=None; alias=default
+(0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'contenttypes' AND `django_content_type`.`model` IN ('contenttype')); args=('contenttypes', 'contenttype'); alias=default
+(0.001) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (4) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(4,); alias=default
+(0.001) BEGIN; args=None; alias=default
+(0.002) INSERT INTO `auth_permission` (`name`, `content_type_id`, `codename`) VALUES ('Can add content type', 4, 'add_contenttype'), ('Can change content type', 4, 'change_contenttype'), ('Can delete content type', 4, 'delete_contenttype'), ('Can view content type', 4, 'view_contenttype'); args=('Can add content type', 4, 'add_contenttype', 'Can change content type', 4, 'change_contenttype', 'Can delete content type', 4, 'delete_contenttype', 'Can view content type', 4, 'view_contenttype'); alias=default
+(0.220) COMMIT; args=None; alias=default
+(0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'contenttypes'; args=('contenttypes',); alias=default
+(0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'sessions'; args=('sessions',); alias=default
+(0.000) BEGIN; args=None; alias=default
+(0.001) INSERT INTO `django_content_type` (`app_label`, `model`) VALUES ('sessions', 'session'); args=('sessions', 'session'); alias=default
+(0.135) COMMIT; args=None; alias=default
+(0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'sessions' AND `django_content_type`.`model` IN ('session')); args=('sessions', 'session'); alias=default
+(0.001) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (5) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(5,); alias=default
+(0.000) BEGIN; args=None; alias=default
+(0.001) INSERT INTO `auth_permission` (`name`, `content_type_id`, `codename`) VALUES ('Can add session', 5, 'add_session'), ('Can change session', 5, 'change_session'), ('Can delete session', 5, 'delete_session'), ('Can view session', 5, 'view_session'); args=('Can add session', 5, 'add_session', 'Can change session', 5, 'change_session', 'Can delete session', 5, 'delete_session', 'Can view session', 5, 'view_session'); alias=default
+(0.129) COMMIT; args=None; alias=default
+(0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'sessions'; args=('sessions',); alias=default
+(0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'api'; args=('api',); alias=default
+(0.000) BEGIN; args=None; alias=default
+(0.001) INSERT INTO `django_content_type` (`app_label`, `model`) VALUES ('api', 'user'), ('api', 'post'), ('api', 'follower'); args=('api', 'user', 'api', 'post', 'api', 'follower'); alias=default
+(0.049) COMMIT; args=None; alias=default
+(0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'api' AND `django_content_type`.`model` IN ('follower', 'user', 'post')); args=('api', 'follower', 'user', 'post'); alias=default
+(0.001) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (8, 6, 7) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(8, 6, 7); alias=default
+(0.000) BEGIN; args=None; alias=default
+(0.001) INSERT INTO `auth_permission` (`name`, `content_type_id`, `codename`) VALUES ('Can add user', 6, 'add_user'), ('Can change user', 6, 'change_user'), ('Can delete user', 6, 'delete_user'), ('Can view user', 6, 'view_user'), ('Can add post', 7, 'add_post'), ('Can change post', 7, 'change_post'), ('Can delete post', 7, 'delete_post'), ('Can view post', 7, 'view_post'), ('Can add follower', 8, 'add_follower'), ('Can change follower', 8, 'change_follower'), ('Can delete follower', 8, 'delete_follower'), ('Can view follower', 8, 'view_follower'); args=('Can add user', 6, 'add_user', 'Can change user', 6, 'change_user', 'Can delete user', 6, 'delete_user', 'Can view user', 6, 'view_user', 'Can add post', 7, 'add_post', 'Can change post', 7, 'change_post', 'Can delete post', 7, 'delete_post', 'Can view post', 7, 'view_post', 'Can add follower', 8, 'add_follower', 'Can change follower', 8, 'change_follower', 'Can delete follower', 8, 'delete_follower', 'Can view follower', 8, 'view_follower'); alias=default
+(0.103) COMMIT; args=None; alias=default
+(0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'api'; args=('api',); alias=default
+(0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'rest_framework_simplejwt'; args=('rest_framework_simplejwt',); alias=default
+(0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'rest_framework_simplejwt'; args=('rest_framework_simplejwt',); alias=default
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\templates with glob **/*.
+Watching dir D:\SocialMediaAPI\locale with glob **/*.mo.
+Watching dir D:\SocialMediaAPI\api\locale with glob **/*.mo.
+Watching dir C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\locale with glob **/*.mo.
+Watching dir C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework_simplejwt\locale with glob **/*.mo.
+(0.001) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None; alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.040) 
+            SELECT
+                table_name,
+                table_type,
+                table_comment
+            FROM information_schema.tables
+            WHERE table_schema = DATABASE()
+            ; args=None; alias=default
+(0.001) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=(); alias=default
