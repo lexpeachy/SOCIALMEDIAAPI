@@ -156,7 +156,7 @@ LOGGING = {
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-SECURE_SSL_REDIRECT = True  # Redirect all non-HTTPS requests to HTTPS
+SECURE_SSL_REDIRECT = False  # Redirect all non-HTTPS requests to HTTPS
 SESSION_COOKIE_SECURE = True  # Ensure cookies are only sent over HTTPS
 CSRF_COOKIE_SECURE = True  # Ensure CSRF cookies are only sent over HTTPS
 SECURE_BROWSER_XSS_FILTER = True  # Enable XSS protection in browsers
